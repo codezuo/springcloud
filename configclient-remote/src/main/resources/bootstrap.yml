@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: configclient-remote
+  cloud:
+    config:
+      # 与远程仓库中配置文件的名字相同(这里是config文件夹下的configclient.yml文件的configclient名)
+      name: configclient
+      label: master
+      discovery:
+        # 表示开启Config服务的发现
+        enabled: true
+        # 是指关联congfigserver-remote文件中application.yml文件中的spring.application.name的名字(这里是: configserver-remote)
+        service-id: configserver-remote
+      fail-fast: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
