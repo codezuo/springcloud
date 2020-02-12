@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: configclient
+    # 上面的name+下面的active通过-连接为configclient-dev，
+    # 为要配置的文件的yml文件命名(这里为configserver-client中shared文件夹中的命名)
+  profiles:
+    active: dev
+
+  cloud:
+    config:
+      # 表示本地ConfigServer的访问路径
+      uri: http://localhost:8762
+      # 表示设置客户端优先判断ConfigServer获取是否正常
+      fail-fast: true
