@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: configclient-remote
   cloud:
     config:
       # 与远程仓库中配置文件的名字相同(这里是config文件夹下的configclient.yml文件的configclient名)

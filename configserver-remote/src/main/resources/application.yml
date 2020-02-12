@@ -13,7 +13,7 @@ spring:
           uri: https://github.com/codezuo/springcloud.git
           # 远程仓库的配置文件的路径，这里为springcloud下对的config文件夹
           search-paths: config
-          username: zuojun
+          username: codezuo
           password: 98678678678zj
         default-label: master
 

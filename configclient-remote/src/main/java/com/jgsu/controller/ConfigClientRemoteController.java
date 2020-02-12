@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @create: 2020-02-12 13:10
  **/
 @RestController
-@EnableDiscoveryClient
 @RequestMapping("/remote")
 public class ConfigClientRemoteController {
 
