@@ -3,7 +3,7 @@ server:
 spring:
   application:
     # 当前服务注册在eureka-server上的名称
-    name: configserver-remote
+    name: configserverremote
 
   cloud:
     config:
@@ -15,7 +15,7 @@ spring:
           search-paths: config
           username: codezuo
           password: 98678678678zj
-        default-label: master
+      #  default-label: master
 
 eureka:
   client:

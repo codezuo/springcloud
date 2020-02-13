@@ -7,18 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="configserver-native" />
-        <module name="eurekaclient" />
-        <module name="eurekaserver" />
         <module name="ribbon" />
-        <module name="consumer" />
-        <module name="zuul" />
-        <module name="hystrix" />
-        <module name="configclient-native" />
         <module name="configserver-remote" />
-        <module name="resttemplate" />
-        <module name="configclient-remote" />
         <module name="feign" />
+        <module name="eurekaclient" />
+        <module name="zipkin" />
+        <module name="zuul" />
+        <module name="configclient-native" />
+        <module name="hystrix" />
+        <module name="configserver-native" />
+        <module name="zipkinclient" />
+        <module name="resttemplate" />
+        <module name="eurekaserver" />
+        <module name="consumer" />
+        <module name="configclient-remote" />
       </profile>
     </annotationProcessing>
   </component>
@@ -36,6 +38,8 @@
       <module name="resttemplate" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="springcloud" options="-parameters" />
+      <module name="zipkin" options="-parameters" />
+      <module name="zipkinclient" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>

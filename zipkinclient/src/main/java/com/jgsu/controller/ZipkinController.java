@@ -9,18 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
  * @program: springcloud
  * @description:
  * @author: Mr.zuo
- * @create: 2020-02-12 13:10
+ * @create: 2020-02-12 15:59
  **/
 @RestController
-@RequestMapping("/remote")
-public class ConfigClientRemoteController {
-
+@RequestMapping("/zipkin")
+public class ZipkinController {
     @Value("${server.port}")
     private String port;
 
-
-    @GetMapping(value = "/index")
+    @GetMapping("/index")
     public String index(){
-        return "端口号为: "+this.port;
+        return "端口号为："+this.port;
     }
 }
