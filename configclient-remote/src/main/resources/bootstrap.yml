@@ -9,7 +9,6 @@ spring:
         enabled: true
         # 是指关联congfigserver-remote文件中application.yml文件中的spring.application.name的名字(这里是: configserver-remote)
         service-id: configserverremote
-      profile: dev
 
 eureka:
   client:
